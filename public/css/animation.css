@@ -1,0 +1,8 @@
+@keyframes borderAnimate {
+    0% {
+        background-position: 100% 0;
+    }
+    0% {
+        background-position: -100% 0;
+    }
+}

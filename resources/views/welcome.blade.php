@@ -13,6 +13,8 @@
 
     <!-- Styles / Scripts -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/animation.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -33,8 +35,8 @@
                     <li class="nav_item"><a href="#" class="nav_link">service</a></li>
                     <li class="nav_item"><a href="#" class="nav_link">blog</a></li>
                     <li class="nav_item"><a href="#" class="nav_link">support</a></li>
-                    <div class="animation home_animation"></div>
                 </ul>
+                <div class="animation home_animation"></div>
             </div>
             <div class="right_menu">
                 <a href="#" class=" btn register_button">register</a>

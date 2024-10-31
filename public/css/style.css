@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --body-bg: #fff;
+}
 html {
     font-size: 62.5%;
     overflow: none;
@@ -10,6 +13,9 @@ html {
 }
 body {
     height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .container {
     display: flex;
@@ -28,19 +34,26 @@ body {
 }
 .logo {
     font-size: 3.2rem;
-    color: rgb(9, 233, 28);
+    color: rgb(184, 209, 186);
     margin-left: 3rem;
+    text-transform: uppercase;
 }
 .navigation_bar {
     font-size: 2.4rem;
-    border: 0.5px solid rgb(87, 84, 84);
+
     border-radius: 1.8rem;
     box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.55);
     text-align: center;
-    padding: 0.5rem 2rem;
+    padding: 1rem;
     margin-right: 8rem;
     margin-bottom: 3rem;
     text-align: center;
+}
+.navigation_bar:first-child {
+    margin-left: 0; /* Adjust as needed */
+}
+.navigation_bar:last-child {
+    margin-right: 0; /* Adjust as needed */
 }
 
 .navbar {
@@ -50,44 +63,27 @@ body {
 .nav_item {
     list-style: none;
     font-size: 2rem;
-    display: inline-block;
+}
+.nav_item:first-child {
+    margin-left: -0.7rem;
+}
+.nav_item:last-child {
+    margin-right: -0.8rem;
 }
 .nav_link {
     text-decoration: none;
-    color: rgb(238, 245, 239) !important;
-    position: relative;
+    color: #eef5ef;
     text-transform: capitalize;
 }
-.animation {
-    position: absolute;
+.nav_link:hover {
     height: 4rem;
-    top: 3rem;
-    left: 30rem;
-    width: 10rem;
-    z-index: 99;
-    background: rgb(34, 187, 14);
-    border-radius: 10rem;
-}
-.nav_link:nth-child(1) {
-    width: 11rem;
-}
-.nav_link:nth-child(2) {
+    padding: 1rem;
     width: 12rem;
-}
-.nav_link:nth-child(3) {
-    width: 13rem;
-}
-.nav_link:nth-child(4) {
-    width: 14rem;
-}
-.nav_link:nth-child(5) {
-    width: 15rem;
-}
-.nav_link:nth-child(6) {
-    width: 16rem;
-}
-.home_animation .nav_link :nth-child(1):hover ~ .animation {
-    width: 10rem;
+    border-bottom: rgb(145, 201, 137) solid 1px;
+    border-top: rgb(145, 201, 137) solid 1px;
+    border-radius: 10rem;
+    box-shadow: 1rem 2rem 3rem rgba(146, 143, 143, 0.5);
+    transform: borderAnimate 0.3s;
 }
 
 .right_menu {
@@ -112,6 +108,7 @@ body {
 .login_button {
     padding: 0.2rem 2rem 1.5rem 2rem;
     border: 1px solid #8b8b8b;
+    color: #fff;
 }
 .register_button {
     background: #0feb63;
