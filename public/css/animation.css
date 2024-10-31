@@ -6,3 +6,59 @@
         background-position: -100% 0;
     }
 }
+
+.menu_icon {
+    display: none;
+}
+
+@media (max-width: 920px) {
+    .navbar {
+        transition: max-height 0.3s ease;
+        max-height: 0;
+    }
+    .menu_icon {
+        display: block;
+    }
+    .navigation_bar {
+        border: none;
+        box-shadow: none;
+    }
+    .logo_content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 10rem;
+        left: 0;
+
+        text-align: center;
+        flex-direction: column;
+
+        padding: 2rem;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    .navbar .nav_item {
+        width: 100%;
+        padding: 2rem;
+    }
+    .navbar .nav_item:hover {
+        width: 100%;
+    }
+    .bx {
+        padding-right: 1rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 510px) {
+    .register_button {
+        display: none;
+    }
+    .navbar .nav_item {
+        padding: 3rem;
+    }
+}
