@@ -45,8 +45,8 @@
                 </ul>
             </div>
             <div class="right_menu">
-                <a href="" class="btn register_button">register</a>
-                <a href="" class="btn login_button">login</a>
+                <a href="{{'register'}}" class="btn register_button">register</a>
+                <a href="{{'login'}}" class="btn login_button">login</a>
             </div>
         </header>
 
@@ -57,6 +57,7 @@
             @yield('serviceSection')
             @yield('blogSection')
             @yield('supportSection')
+            @yield('authentication')
 
         </main>
         <!-- <footer class="footer_wrapper">

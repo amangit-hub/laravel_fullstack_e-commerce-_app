@@ -1,5 +1,5 @@
 const navBar = document.getElementById("navbar");
-navBar.style.maxHeight = "0px"; // Start collapsed
+navBar.style.maxHeight = "0px"; 
 
 function toggleMenu() {
     if (navBar.style.maxHeight === "0px") {
@@ -10,7 +10,6 @@ function toggleMenu() {
         navBar.style.background = "none";
     }
 }
-
 document.addEventListener("DOMContentLoaded", function () {
     const animatedElements = document.querySelectorAll(".animate");
 
@@ -18,13 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("animate"); // Trigger animation
-                    observer.unobserve(entry.target); // Stop observing once animated
+                    entry.target.classList.add("animate");
+                    observer.unobserve(entry.target); 
                 }
             });
         },
         {
-            threshold: 0.1, // Adjust this to control when the animation starts
+            threshold: 0.1, 
         }
     );
 
