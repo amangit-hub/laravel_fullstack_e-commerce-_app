@@ -1,26 +1,38 @@
 <?php
 
+
+
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+// Home route
+
+Route::get('/home', function () {
+    return view('features.home');
 })->name('home');
 
+// About route
 Route::get('/about', function () {
-    return view('about');
+    return view('features.about');
 })->name('about');
+
+// Explore route
 Route::get('/explore', function () {
-    return view('explore');
+    return view('features.explore');
 })->name('explore');
 
+// Service route
 Route::get('/service', function () {
-    return view('service');
+    return view('features.service');
 })->name('service');
 
+// Blog route
 Route::get('/blog', function () {
-    return view('blog');
+    return view('features.blog');
 })->name('blog');
 
+// Support route
 Route::get('/support', function () {
-    return view('support');
+    return view('features.support');
 })->name('support');
+
+// 

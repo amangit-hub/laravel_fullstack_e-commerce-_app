@@ -2,10 +2,10 @@
 @section("aboutsection");
 <div class="home_container">
     <div class="home">
-        <div class="home_box ">
-            hello there
+        <div class="home_box animate">
+            hello about section
         </div>
-        <div class="home_box ">
+        <div class="home_box animate">
             hello there
         </div>
 
@@ -13,13 +13,13 @@
     </div>
     <!-- one by three -->
     <div class="home_content">
-        <div class="home_box ">
+        <div class="home_box animate">
             hello there
         </div>
-        <div class="home_box ">
+        <div class="home_box animate">
             hello there
         </div>
-        <div class="home_box ">
+        <div class="home_box animate">
             hello there
         </div>
 
@@ -28,7 +28,7 @@
 
 
     <div class="home_content last_content">
-        <div class="home_box ">
+        <div class="home_box animate">
             hello there
         </div>
 

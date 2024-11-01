@@ -45,8 +45,8 @@
                 </ul>
             </div>
             <div class="right_menu">
-                <a href="#" class="btn register_button">register</a>
-                <a href="#" class="btn login_button">login</a>
+                <a href="" class="btn register_button">register</a>
+                <a href="" class="btn login_button">login</a>
             </div>
         </header>
 

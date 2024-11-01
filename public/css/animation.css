@@ -7,6 +7,26 @@
     }
 }
 
+/* scroll animation */
+/* Scroll animation */
+@keyframes animateRow {
+    from {
+        transform: scale(0.1);
+        opacity: 0; /* Optional: fade in effect */
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate {
+    animation: animateRow 0.5s linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    visibility: visible;
+}
+
 .menu_icon {
     display: none;
 }
