@@ -60,9 +60,9 @@
             @yield('authentication')
 
         </main>
-        <!-- <footer class="footer_wrapper">
+        <footer class="footer_wrapper">
             hello footer
-        </footer> -->
+        </footer>
     </div>
 
     <script src="{{ asset('js/script.js') }}"></script>

@@ -1,5 +1,5 @@
 const navBar = document.getElementById("navbar");
-navBar.style.maxHeight = "0px"; 
+navBar.style.maxHeight = "0px";
 
 function toggleMenu() {
     if (navBar.style.maxHeight === "0px") {
@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("animate");
-                    observer.unobserve(entry.target); 
+                    observer.unobserve(entry.target);
                 }
             });
         },
         {
-            threshold: 0.1, 
+            threshold: 0.1,
         }
     );
 

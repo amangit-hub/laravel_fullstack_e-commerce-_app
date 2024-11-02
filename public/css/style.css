@@ -23,6 +23,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    flex: 1;
 }
 /* header wrapper implementation */
 .header_wrapper {
@@ -64,39 +66,42 @@ body {
 .navigation_bar:last-child {
     margin-right: 1; /* Adjust as needed */
 }
-
+p {
+    font-size: 2rem;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: -1rem;
+    align-items: center;
+    padding: 1rem;
     text-align: center;
 }
+
 .nav_item {
     list-style: none;
     font-size: 2rem;
+    margin: 0 0.5rem;
 }
-.nav_item:first-child {
-    margin-left: -0.7rem;
-}
-.nav_item:last-child {
-    margin-right: -0.8rem;
-}
+
 .nav_link {
     text-decoration: none;
     color: #eef5ef;
     text-transform: capitalize;
 }
+
 .nav_link:hover {
     height: 4rem;
     padding: 1rem;
     width: 12rem;
-    border-bottom: rgb(145, 201, 137) solid 1px;
-    /* border-top: rgb(145, 201, 137) solid 1px; */
+    border-left: rgb(145, 201, 137) solid 3px;
+    border-right: rgb(145, 201, 137) solid 3px;
     border-radius: 10rem;
     box-shadow: 1rem 2rem 3rem rgba(146, 143, 143, 0.5);
-    transform: borderAnimate 0.3s;
+    transition: all 0.9s; /* Added for smooth transition */
 }
-
+.nav_link:active {
+    border-bottom-left-radius: rgb(145, 201, 137) solid 1px;
+}
 .right_menu {
     font-size: 2.4rem;
     display: flex;
@@ -145,7 +150,7 @@ main {
     color: #fff;
 }
 .home {
-    height: 70vh;
+    height: 60vh;
     margin: 0 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -159,6 +164,11 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem;
     margin-bottom: 10rem;
+}
+img {
+    background: no-repeat cover center fixed;
+    border-radius: 0.8rem;
+    z-index: 1000;
 }
 .home_box {
     visibility: hidden;
@@ -178,11 +188,12 @@ main {
     margin-top: 30rem;
 }
 /* footer implementation */
-/* .footer_wrapper {
+.footer_wrapper {
     width: 100%;
     background-color: #333333;
     color: white;
     padding: 1rem;
     text-align: center;
-    height: 15%;
-} */
+    position: absolute;
+    bottom: 0;
+}

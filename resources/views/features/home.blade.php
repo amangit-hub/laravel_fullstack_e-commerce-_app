@@ -6,10 +6,9 @@
             hello there
         </div>
         <div class="home_box animate">
-            hello there
+            <img src="{{ asset('img/e-commerce_web_5.jpg') }}" alt="Description">
+
         </div>
-
-
     </div>
     <!-- one by three -->
     <div class="home_content">

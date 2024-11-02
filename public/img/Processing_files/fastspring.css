@@ -1,0 +1,14 @@
+.fs-popup-background {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)) !important;
+    background: -o-linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)) !important;
+    background: -moz-linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)) !important;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)) !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 100000000000000 !important;
+    overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+}
