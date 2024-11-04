@@ -31,3 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(element);
     });
 });
+
+const imgContainer = document.getElementById("imgContainer");
+const previous = document.getElementById("previous");
+const next = document.getElementById("next");
+imgContainer.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    imgContainer.scrollLeft += deltaY;
+});

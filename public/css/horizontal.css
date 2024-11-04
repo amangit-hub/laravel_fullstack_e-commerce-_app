@@ -1,0 +1,39 @@
+.gallary {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.gallary::-webkit-scrollbar {
+    display: none;
+}
+.gallary_box-2 {
+    display: flex;
+    grid-gap: 2rem;
+    overflow: hidden;
+}
+
+.content > span > img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+    transition: transform 0.8s ease;
+}
+
+.content > span > img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.icon {
+    padding: 0 2rem 0 2rem;
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+    font-size: 3rem;
+    width: 7rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: rgb(36, 35, 35);
+    cursor: pointer;
+}
