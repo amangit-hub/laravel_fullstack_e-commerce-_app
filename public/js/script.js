@@ -32,10 +32,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const imgContainer = document.getElementById("imgContainer");
+const imgContainer = document.getElementById("img_container");
 const previous = document.getElementById("previous");
 const next = document.getElementById("next");
+
+// Scroll with mouse wheel
 imgContainer.addEventListener("wheel", (event) => {
     event.preventDefault();
-    imgContainer.scrollLeft += deltaY;
+    imgContainer.scrollLeft += event.deltaY;
+});
+
+// Optional: Add buttons for manual scrolling
+previous.addEventListener("click", () => {
+    imgContainer.scrollLeft -= imgContainer.clientWidth / 3; // Scroll left by one image width
+});
+
+next.addEventListener("click", () => {
+    imgContainer.scrollLeft += imgContainer.clientWidth / 3; // Scroll right by one image width
 });

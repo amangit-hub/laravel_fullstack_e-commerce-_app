@@ -28,17 +28,25 @@
     <!-- one by two -->
     <div class="home">
         <div class="home_box animate">
-            <div class="gallary">
-                <span class="gallary_box-2 icon" id="previous">&lt;</span>
-                <div class="gallary_box-2 content" id="img_container">
+            <div class="gallery">
+                <span class="gallery_icon" id="previous">&lt;</span>
+                <div class="gallery_box content" id="img_container">
                     <span><img src="{{ asset('img/e-commerce_web_5.jpg') }}" alt="Description"></span>
+                    <span><img src="{{ asset('img/ecommerce_web_3.jpg') }}" alt="Description"></span>
                     <span><img src="{{ asset('img/e-commerce_web_5.jpg') }}" alt="Description"></span>
+                    <span><img src="{{ asset('img/ecommerce_web_3.jpg') }}" alt="Description"></span>
                     <span><img src="{{ asset('img/e-commerce_web_5.jpg') }}" alt="Description"></span>
-
+                    <span><img src="{{ asset('img/ecommerce_web_3.jpg') }}" alt="Description"></span>
+                    <span><img src="{{ asset('img/e-commerce_web_5.jpg') }}" alt="Description"></span>
+                    <span><img src="{{ asset('img/ecommerce_web_3.jpg') }}" alt="Description"></span>
+                    <span><img src="{{ asset('img/e-commerce_web_5.jpg') }}" alt="Description"></span>
+                    <span><img src="{{ asset('img/ecommerce_web_3.jpg') }}" alt="Description"></span>
+                    <span><img src="{{ asset('img/e-commerce_web_5.jpg') }}" alt="Description"></span>
+                    <span><img src="{{ asset('img/ecommerce_web_3.jpg') }}" alt="Description"></span>
                 </div>
-
-                <span class="gallary_box-2 icon" id="next">&gt;</span>
+                <span class="gallery_icon" id="next">&gt;</span>
             </div>
+
 
         </div>
 
