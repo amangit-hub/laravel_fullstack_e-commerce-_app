@@ -2,16 +2,19 @@
 @section("header_content");
 <div class="home_container">
     <div class="home">
-        <div class="home_box animate">
-            hello there
+        <div class="home_box animate home1_3">
+            <div class="home_section">
+                <h1 class="main_tag">Transform Your Beauty Routine </h1>
+                <a href="#" class="home_btn">discover</a>
+            </div>
         </div>
-        <div class="home_box animate">
+        <div class="home_box animate home1_3">
             <img src="{{ asset('img/e-commerce_web_5.jpg') }}" alt="Description">
 
         </div>
     </div>
     <!-- one by three -->
-    <div class="home_content">
+    <div class="home_content ">
         <div class="home_box animate">
             hello there
         </div>

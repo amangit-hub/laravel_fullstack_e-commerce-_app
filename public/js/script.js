@@ -36,17 +36,24 @@ const imgContainer = document.getElementById("img_container");
 const previous = document.getElementById("previous");
 const next = document.getElementById("next");
 
-// Scroll with mouse wheel
 imgContainer.addEventListener("wheel", (event) => {
     event.preventDefault();
     imgContainer.scrollLeft += event.deltaY;
 });
 
-// Optional: Add buttons for manual scrolling
+const getImageWidth = () => {
+    const totalImages = imgContainer.children.length;
+    return imgContainer.clientWidth / Math.min(totalImages, 3);
+};
+
+// Scroll left
 previous.addEventListener("click", () => {
-    imgContainer.scrollLeft -= imgContainer.clientWidth / 3; // Scroll left by one image width
+    const imageWidth = getImageWidth();
+    imgContainer.scrollLeft -= imageWidth;
 });
 
+// Scroll right
 next.addEventListener("click", () => {
-    imgContainer.scrollLeft += imgContainer.clientWidth / 3; // Scroll right by one image width
+    const imageWidth = getImageWidth();
+    imgContainer.scrollLeft += imageWidth;
 });

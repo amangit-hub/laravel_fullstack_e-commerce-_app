@@ -37,7 +37,7 @@
             </div>
             <div class="navigation_bar">
                 <ul class="navbar" id="navbar">
-                    <li class="nav_item"><a href="{{ route('home') }}" class="nav_link">home</a></li>
+                    <li class="nav_item"><a href="{{ route('home') }}" class="nav_link active">home</a></li>
                     <li class="nav_item"><a href="{{ route('about') }}" class="nav_link">about</a></li>
                     <li class="nav_item"><a href="{{ route('explore') }}" class="nav_link">explore</a></li>
                     <li class="nav_item"><a href="{{ route('service') }}" class="nav_link">service</a></li>
@@ -61,9 +61,7 @@
             @yield('authentication')
 
         </main>
-        <footer class="footer_wrapper">
-            hello footer
-        </footer>
+
     </div>
 
     <script src="{{ asset('js/script.js') }}"></script>

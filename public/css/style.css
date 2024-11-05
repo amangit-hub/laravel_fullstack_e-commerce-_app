@@ -16,7 +16,7 @@ body {
     height: 100%;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
+
     background: var(--home-bg);
 }
 .container {
@@ -61,10 +61,10 @@ body {
     opacity: 1;
 }
 .navigation_bar:first-child {
-    margin-left: 0; /* Adjust as needed */
+    margin-left: 0;
 }
 .navigation_bar:last-child {
-    margin-right: 1; /* Adjust as needed */
+    margin-right: 1;
 }
 p {
     font-size: 2rem;
@@ -93,13 +93,14 @@ p {
     height: 4rem;
     padding: 1rem;
     width: 12rem;
-    border-left: rgb(145, 201, 137) solid 3px;
-    border-right: rgb(145, 201, 137) solid 3px;
+    border-top: rgb(125, 99, 241) solid 3px;
+    border-bottom: rgb(92, 106, 230) solid 3px;
     border-radius: 10rem;
     box-shadow: 1rem 2rem 3rem rgba(146, 143, 143, 0.5);
-    transition: all 0.9s; /* Added for smooth transition */
+    transition: all 0.9s;
 }
-.nav_link:active {
+.nav_link .active {
+    background: red;
     border-bottom-left-radius: rgb(145, 201, 137) solid 1px;
 }
 .right_menu {
@@ -142,6 +143,9 @@ p {
 /* main body implementation */
 main {
     flex: 1;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    margin-right: -6rem;
 }
 .home_container {
     height: 100vh;
@@ -157,6 +161,7 @@ main {
     grid-gap: 2rem;
     margin-bottom: 10rem;
 }
+
 .home_content {
     height: 60vh;
     margin: 0 1rem;
@@ -165,20 +170,92 @@ main {
     grid-gap: 2rem;
     margin-bottom: 10rem;
 }
-img {
+.main_tag {
+    font-size: 4rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 7rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+.home_btn {
+    background: #323232; /* Dark background */
+    border-radius: 1rem;
+    padding: 1.2rem 2.4rem; /* Adjust padding for better spacing */
+    text-transform: uppercase;
+    font-size: 2.4rem; /* Keep font size large */
+    font-weight: bold; /* Make text bold */
+    color: white; /* Light text color for contrast */
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    overflow: hidden; /* Ensure pseudo-elements don't overflow */
+    transition: transform 0.3s ease; /* Optional smooth animation */
+}
+
+.home_btn::after {
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    background: red;
+    left: 0;
+    top: 0;
+    transition: opacity 0.3s ease; /* Optional transition for hover */
+}
+
+.home_btn::before {
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background-size: 600%;
+    top: -0.2rem;
+    left: -0.2rem;
+    z-index: -5;
+    background: linear-gradient(
+        45deg,
+        red,
+        green,
+        yellow,
+        blue,
+        orange,
+        rgb(193, 11, 238)
+    );
+    width: calc(100% + 0.4rem);
+    height: calc(100% + 0.4rem);
+    filter: blur(0.8rem);
+    transition: background-position 0.5s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effects */
+.home_btn:hover::before {
+    background-position: 100% 100%; /* Moves the gradient on hover */
+}
+
+.home_btn:hover::after {
+    opacity: 0.8; /* Fade out effect on hover */
+}
+
+.home_btn:active {
+    transform: scale(0.98); /* Button press effect */
+}
+.home1_3 img {
     background: no-repeat cover center fixed;
     border-radius: 0.8rem;
     z-index: 1000;
+    height: 70vh;
+    width: 100%;
 }
 .home_box {
     visibility: hidden;
-    /* margin-top: 10rem; */
-    border: 1px solid #0e0f11;
+
     background: #b7b9bb;
-    padding: 2em;
+
     border-radius: 1rem;
     text-align: center;
-    /* height: 30rem; */
 }
 .last_content {
     margin-bottom: 4rem;
@@ -186,14 +263,4 @@ img {
 .about_wrapper {
     background: #ff2525;
     margin-top: 30rem;
-}
-/* footer implementation */
-.footer_wrapper {
-    width: 100%;
-    background-color: #333333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
 }
